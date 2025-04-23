@@ -134,6 +134,10 @@ main hr {
     font-size: 60px;
     font-weight: 500;
 }
+.about-col2 h3 {
+    margin: 10px 0;
+    color: #fff585;
+}
 
 .tab-titles {
     display: flex;

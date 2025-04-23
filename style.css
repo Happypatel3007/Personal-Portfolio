@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(2, 31, 48);
+    color: white;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(4, 40, 61);
+}
+
+nav ul {
+    display: flex;
+    justify-self: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(245, 243, 193);
+    font-size: 1.04rem;
+}
+
+.left {
+    font-size: 1.5rem;
+    ;
+}
+
+#firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px 0;
+}
+
+#firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 2.5rem;
+    margin: 70px 0;
+}
+
+.leftSection .btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px;
+    margin-top: 30px;
+    background-color: #2b3960;
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.leftSection .btn:hover {
+    background-color: #3b4b78;
+    transform: translateY(-5px);
+}
+
+.rightSection {
+    display: flex;
+    justify-content: center;
+}
+
+.rightSection img{
+    width: 100%;
+}
+
+.text-yellow {
+    color: #ffef3c;
+}
+
+#element {
+    color: #ffef3c;
+    font-size: 3rem;
+}
+
+main hr {
+    border-color: #b9b5ff;
+    margin: 60px 84px;
+    opacity: 0.5;
+}
+
+/* --------------------second section (About)--------------------------- */
+#secondSection {
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+#secondSection .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col1 {
+    flex-basis: 35%;
+}
+
+.about-col1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ffef3c;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #fff585;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* --------------------Services section------------------------- */
+#Services {
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.services-list div {
+    background-color: #3e5288;
+    padding: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background-color: #ffef3c;
+    transform: translateY(-10px);
+}
+
+/* --------------------Projects Section-------------------------- */
+#projects {
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.project {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    height: 0%;
+    width: 80%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ffef3c);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    /* text is coming from bottom */
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ffea00;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+/* for image zooming effect */
+.project:hover img {
+    transform: scale(1.1);
+}
+
+/* for show the content */
+.project:hover .layer {
+    height: 100%;
+}
+
+/* --------------------Contact Section--------------------------- */
+#contact {
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+#contact .row {
+    display: flex;
+}
+
+.contactleft {
+    flex-basis: 35%;
+}
+
+.contactleft p {
+    margin-top: 30px;
+}
+
+.contactleft p i {
+    color: #ffea00;
+    margin-right: 35px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-left: 80px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+    margin-top: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ffea00;
+    transform: translateY(-5px);
+}
+
+.contactright {
+    flex-basis: 60%;
+}
+
+.contactright form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #3b4b78;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.submitbtn {
+    background-color: #ffea00;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 2px solid white;
+    padding: 14px 60px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+/* --------------------footer--------------------------- */
+footer {
+    background-color: rgb(4, 40, 61);
+}
+
+footer .footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 30px 0;
+}

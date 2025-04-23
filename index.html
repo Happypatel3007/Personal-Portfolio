@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/81c0fc0315.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Happy's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#firstSection">Home</a></li>
+                    <li><a href="#secondSection">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="text-yellow">Happy</span>
+                <div>and I am a passionate</div>
+                <!-- <div>Web Developer</div> -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Happy_resume .pdf" download class="btn btn2">Download Resume</a>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="3d.png" alt="bg image">
+            </div>
+        </section>
+        <hr>
+        <section id="secondSection">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col1">
+                        <img src="happy.jpg">
+                    </div>
+                    <div class="about-col2">
+                        <h1 class="sub-title">About Me</h1>
+                        <P>Computer Engineering student. I consider my self a responsible and orderly person. 
+                           Enthusiastic front-end developer with a keen eye for design and a strong proficiency in HTML, CSS, and JavaScript. 
+                           Seeking to leverage my creativity and coding abilities to deliver engaging user experiences and contribute to cutting-edge web development projects.</P>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Graphic Designer</span><br>Designing Brand Logos/Posters</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="achievements">
+                            <ul>
+                                <li><span>Leadership</span><br>Leading the graphic design department in SCC</li>
+                                <li><span>Project</span><br>Developed a classic snake game using Python and Pygame
+                                    library, providing an entertaining and challenging user
+                                    experience</li>
+                                <li><span>Courses</span><br>Completed Figma Course From Cousera.<br>Completed
+                                    FOUNDATIONS OF USER EXPERIENCE(UX)
+                                    DESIGN COURSE on Cousera Authorized By Google.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>BACHELOR OF ENGINEERING</span><br>Pursuing BE in Computer Engineering from
+                                    Vishwakarma Government Engineering
+                                    College, Chandkheda, Ahmedabad
+                                </li>
+                                <li><span>HIGHER SECONDARY SCHOOL</span><br>Completed HSC Board with 97.60 PR in 2020
+                                </li>
+                                <li><span>SECONDARY SCHOOL</span><br>Completed SSC Board with 97.57 PR in 2018</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="Services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Web development, also known as website development, refers to the tasks associated with 
+                            creating, building, and maintaining websites and web applications that run online on a browser.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Web_development">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-figma"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>UI design deals with the visual aspects and presentation of a digital product, while UX design focuses on the overall user experience and usability. 
+                            Both disciplines are essential for creating successful and user-friendly digital products.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/User_interface_d">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <h2>Graphic Design</h2>
+                        <p>Graphic design is an interdisciplinary branch of design and of the fine arts.
+                            Graphic design can be found in various forms, such as advertisements, posters, 
+                            logos, websites, product packaging, book covers, and more.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Graphic_design">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="project-list">
+                    <div class="project">
+                        <img src="web.png">
+                        <div class="layer">
+                            <h3>Personal Portfolio</h3>
+                            <p>This Portfolio is a living and changing collection of records that reflect
+                                my accomplishments, skills, experiences, and attributes.</p>
+                            <a href="https://github.com/Happypatel3007/Personal_Portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="UI-UX.png">
+                        <div class="layer">
+                            <h3>Furniture App Design</h3>
+                            <p>This Furniture App UI (User Interface) is the graphical and usually touch-sensitive
+                                display on a smartphone,
+                                that allows the user to interact with this device furniture app, features, content and
+                                functions.</p>
+                            <a href="https://xd.adobe.com/view/abbfc1c7-d491-4fd5-8079-13a29ba9539f-feec/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="gameProject.jpg">
+                        <div class="layer">
+                            <h3>Snake Game</h3>
+                            <p>This game's goal is to move the snake and eat as many food blocks as possible.
+                                There is only one food block at any given time. When the food is eaten, the snake grows
+                                in length.</p>
+                            <a href="https://github.com/Happypatel3007/SnakeGame"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contactleft">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>happypatel3007@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>9409331520</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/happy-patel-35816b205/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Happypatel3007"><i class="fa-brands fa-square-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="contactright">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                            <button type="submit" class="submitbtn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-rights">
+            Copyright 2023
+            &copy;
+            happysportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'UI Designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+    <!-- for about transitions skills, education, achievements -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+
+            // for removing the content while clicking on another tabname
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            // for adding the content white clicking on another tabname
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <!-- for taking data into google sheet -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyK0D-fGh4qesoSKamILQuqLUerD9_lEEwwFlc95M_WLLujMZIMGLuu14pXhKK8mw2Z/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
